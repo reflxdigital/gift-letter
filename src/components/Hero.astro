@@ -1,2 +1,23 @@
 ---
+import { Image } from "astro:assets";
+import heroImage from '../rrmm-transparent.png';
 ---
+
+<section class="bg-gradient-to-b from-slate-900 to-slate-700 pt-20 pb-48">
+    <div class="container mx-auto flex flex-col justify-start items-center">
+        <Image src={heroImage} alt="Melchor, Gaspar y Baltasar" class="object-top" 
+         />
+         <div class="flex flex-col justify-center items-left w-8/12">
+            <h1 class="text-5xl text-white font-bold text-left mb-10">Tenemos un mensaje para David y para Iria</h1>
+            <p class="text-2xl text-white pb-10">Queridos David e Iria,</p>
+            <p class="text-2xl text-white pb-10">Sabemos que habéis sido muy buenos este año, y por eso hemos decidido regalaros un viaje a uno de los sitios que nos pedísteis.</p>
+            <p class="text-2xl text-white pb-10">Eso sí, tenéis que hablar con vuestros papás para decidir entre todos el mejor sitio al que podéis ir y cuándo vais a poder hacer el viaje.</p>
+            <p class="text-2xl text-white pb-10">Esperamos que os guste.</p>
+        </div>
+    </section>
+
+<style>
+  .hero {
+    height: 100vh;
+  }
+</style>
